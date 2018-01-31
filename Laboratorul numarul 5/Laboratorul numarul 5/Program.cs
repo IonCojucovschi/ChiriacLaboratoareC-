@@ -16,21 +16,13 @@ namespace Laboratorul_numarul_5
         static void Main(string[] args)
         {
             t1 = new int[30, 30];
-           // int[,] b = new int[7, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 1, 2, 3, 4, 5, 6 }, { 0, 3, 1, 2, 6, 4, 5 }, { 0, 2, 3, 1, 5, 6, 4 }, { 0, 4, 5, 6, 1, 2, 3 }, { 0, 6, 4, 5, 3, 1, 2 }, { 0, 5, 6, 4, 2, 3, 1 } };
-           // int[,] ai = new int[3, 3] { { 0, 0, 0 }, { 0, 1, 2 }, { 0, 2, 1 } };
-
-            ///{ { 0, 0, 0, 0 }, { 0, 1, 2, 3 }, { 0, 2, 3, 1 }, { 0, 3, 1, 2 } };
-            ////{ { 0,0,0,0,0}, {0, 2, 3, 1, 4 }, {0,4,1,3,2 },{0,3,2,4,1 },{0,1,4,2,3 } };
 
             a =new int[4,4]{ { 0,0,0,0},{0,1,2,3 },{0,3,1,2 },{0,2,3,1 } };
             int n = 0;
             Console.Write("Dati ordinul matricei a, n=");
             n = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("Dati ordinul matricei b, m=");
-            //m = Convert.ToInt32(Console.ReadLine());
 
             ////initializationmatrix(a,n);      ///initiate matrix 
-            //produs_cartezian(out a, ai, b, n, m);
 
             afisare(a,n);
             b = new int[100];
@@ -88,7 +80,7 @@ namespace Laboratorul_numarul_5
             int j = 0;
             for (int i = 1; i < n + 1; i++)
             {
-                if (a[i, i] == i & mm(i, n) != 0 & nn(i, n) != 0) { Console.WriteLine("=E("+nn(i,n)+","+mm(i,n)+");");j++; }
+                if (a[i, i] == i && nn(i, n)!=0 && mm(i, n)!=0) { Console.WriteLine("=E("+nn(i,n)+","+mm(i,n)+");");j++; }
             }
             if (j == 0) Console.WriteLine("NU sunt");
         }
@@ -105,18 +97,19 @@ namespace Laboratorul_numarul_5
                 {
                     x = a[x, g];
                     k++;
-                } while (x != jj || k < n+1);
+                } while (x != jj && k < n+1);
 
-                if (k > n) b[jj] = 0;
+                if (k > n+1) b[jj] = 0;
                 else b[jj] = k;
             }
 
-            q = b[1];
-            for (jj = 1; jj < n + 1; jj++)
+            q = b[2];
+            for (jj = 2; jj < n + 1; jj++)
             {
                 if (b[jj] > q)
                 {
                     q = b[jj];
+                    break;
                 }
 
             }
@@ -135,12 +128,17 @@ namespace Laboratorul_numarul_5
                 do {
                     x = a[gg, x];
                     k++;
-                } while (x!=jj || k<n+2);
+                } while (x!=jj && k<n+2);
+
+                if (k > n+1) c[jj] = 0;
+                else c[jj]= k;
+
+
             }
-            q = c[1];
-            for (jj = 1; jj < n + 1; jj++)
+            q = c[2];
+            for (jj = 2; jj < n + 1; jj++)
             {
-                if (c[jj] > q) q = c[jj];
+                if (c[jj] > q) { q = c[jj]; break; }
             }
             return q;
         }
