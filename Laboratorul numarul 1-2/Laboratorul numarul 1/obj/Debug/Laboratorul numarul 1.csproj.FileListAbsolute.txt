@@ -1,0 +1,7 @@
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.csprojResolveAssemblyReference.cache
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.csproj.CoreCompileInputs.cache
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.exe
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.pdb
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe.config
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe
+F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.pdb
