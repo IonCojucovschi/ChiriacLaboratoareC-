@@ -16,9 +16,9 @@ namespace LAboratorul_numarul_3
         static void Main(string[] args)
         {
             t1 = new int[30, 30];
-            int[,] b = new int[7, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 1,2,3,4,5,6 }, { 0, 3,1,2,6,4,5 }, { 0,2,3,1,5,6,4}, { 0,4,5,6,1,2,3}, { 0,6,4,5,3,1,2}, { 0,5,6,4,2,3,1} };
+            int[,] b = new int[4, 4] { { 0,0,0,0},{0,1,2,3 },{0,3,1,2 },{0,2,3,1 } }; 
             int[,] ai = new int[3, 3] { { 0,0,0},{0,1,2 },{0,2,1 } };
-
+            ///{ { 0, 0, 0, 0, 0, 0, 0 }, { 0, 1,2,3,4,5,6 }, { 0, 3,1,2,6,4,5 }, { 0,2,3,1,5,6,4}, { 0,4,5,6,1,2,3}, { 0,6,4,5,3,1,2}, { 0,5,6,4,2,3,1} };
             ///{ { 0, 0, 0, 0 }, { 0, 1, 2, 3 }, { 0, 2, 3, 1 }, { 0, 3, 1, 2 } };
             ////{ { 0,0,0,0,0}, {0, 2, 3, 1, 4 }, {0,4,1,3,2 },{0,3,2,4,1 },{0,1,4,2,3 } };
             int n = 0;
@@ -29,7 +29,7 @@ namespace LAboratorul_numarul_3
 
             ////initializationmatrix(a,n);      ///initiate matrix 
             produs_cartezian(out a, ai, b, n, m);
-
+            n = n * m;
             r = 0; r1 = 0;
 
             afisare(a, n);
@@ -88,8 +88,8 @@ namespace LAboratorul_numarul_3
                     t1[i,j] = k;
                     k=k+1;
                 }
-            for (int i = 1; i < m * n; i++)
-                for (int j = 1; j < n * m; j++)
+            for (int i = 1; i < m * n+1; i++)
+                for (int j = 1; j < n * m+1; j++)
                 {
                     masiv[i, j] = t1[a[c[i], c[j]], b[f[i], f[j]]];
                 }
@@ -105,9 +105,9 @@ namespace LAboratorul_numarul_3
             {
                 for (int j = 1; j < n + 1; j++)
                 {
-                    Console.Write(a[i, j]);
+                    Console.Write(" "+a[i, j]);
                 }
-                Console.WriteLine();
+                Console.WriteLine("//"+i+"//"+j);
             }
             Console.WriteLine();
         }

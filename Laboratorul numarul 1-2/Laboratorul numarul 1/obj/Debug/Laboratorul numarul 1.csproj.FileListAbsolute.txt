@@ -5,3 +5,10 @@ F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\obj\Debug\
 F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe.config
 F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe
 F:\Laboratoare Chiriac C#\Laboratorul numarul 1\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.pdb
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe.config
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.exe
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\bin\Debug\Laboratorul numarul 1.pdb
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.csprojResolveAssemblyReference.cache
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.csproj.CoreCompileInputs.cache
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.exe
+E:\Projects\Chiriac Laboratoare\Laboratorul numarul 1-2\Laboratorul numarul 1\obj\Debug\Laboratorul numarul 1.pdb
