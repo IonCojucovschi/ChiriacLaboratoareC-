@@ -8,13 +8,15 @@ namespace Laboratorul_numarul_4
 {
     class Program
     {
-        static int[,] a, b, tabel,opus, t1, p1, gr;
+        static int[,] a, b, tabel, opus, t1, p1, gr, gr2;
         static int[] c, f;
         static int r1, d1, d2, r, d, r2, n, m, t, i, j, p, l;
 
 
         static void Main(string[] args)
         {
+            opus = new int[25, 25];
+            tabel = new int[25, 25];
             t1 = new int[30, 30];
             int[,] b = new int[7, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 1, 2, 3, 4, 5, 6 }, { 0, 3, 1, 2, 6, 4, 5 }, { 0, 2, 3, 1, 5, 6, 4 }, { 0, 4, 5, 6, 1, 2, 3 }, { 0, 6, 4, 5, 3, 1, 2 }, { 0, 5, 6, 4, 2, 3, 1 } };
             int[,] ai = new int[3, 3] { { 0, 0, 0 }, { 0, 1, 2 }, { 0, 2, 1 } };
@@ -22,14 +24,13 @@ namespace Laboratorul_numarul_4
             ///{ { 0, 0, 0, 0 }, { 0, 1, 2, 3 }, { 0, 2, 3, 1 }, { 0, 3, 1, 2 } };
             ////{ { 0,0,0,0,0}, {0, 2, 3, 1, 4 }, {0,4,1,3,2 },{0,3,2,4,1 },{0,1,4,2,3 } };
             int n = 0;
+
             Console.Write("Dati ordinul matricei a, n=");
             n = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Dati ordinul matricei b, m=");
-            m = Convert.ToInt32(Console.ReadLine());
-
-            ////initializationmatrix(a,n);      ///initiate matrix 
-            produs_cartezian(out a, ai, b, n, m);
-
+            Topus(out gr, n);
+            produs_cartezian_special(out gr2, opus, gr, n);
+            //  produs_cartezian(out a, ai, b, n, m);
+            a = gr2;
             r = 0; r1 = 0;
 
             afisare(a, n);
@@ -76,14 +77,15 @@ namespace Laboratorul_numarul_4
         }
 
 
-        public static void Topus(int[,] ai, int n)
+        public static void Topus(out int[,] MayBeGR, int n)
         {
+            MayBeGR = new int[25, 25];
             for (int i = 1; i < n + 1; i++)
                 for (int j = 1; j < n + 1; j++)
                 {
-                    Console.Write("ai[" + i + "," + j + "]=");
+                    Console.Write("gr[" + i + "," + j + "]=");
                     int element = Convert.ToInt32(Console.ReadLine());
-                    ai[i, j] = element;
+                    MayBeGR[i, j] = element;
 
                     if (element == 1) opus[i, 1] = j;
                 }
@@ -99,6 +101,28 @@ namespace Laboratorul_numarul_4
 
 
 
+        public static void produs_cartezian_special(out int[,] masiv, int[,] opus, int[,] gr, int n)
+        {
+            int k1, k2;
+            k1 = 0;
+
+            masiv = new int[30, 30];
+            for (int i = 1; i < n + 1; i++)
+                for (int j = 1; j < m + 1; j++)
+                {
+                    k1 = k1 + 1; k2 = 0;
+                    for (int i2 = 1; i2 < n + 1; i2++)
+                        for (int j2 = 1; j2 < n + 1; j2++)
+                        {
+                            k2 = k2 + 1;
+                            gr2[k1, k2] = tabel[gr[gr[i, j], opus[j2, 1]], gr[gr[i2, j2], opus[i, 1]]];
+                        }
+
+                }
+
+
+
+        }
 
 
 
