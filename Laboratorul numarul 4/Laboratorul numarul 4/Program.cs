@@ -30,9 +30,15 @@ namespace Laboratorul_numarul_4
             Topus(out gr, n);
             produs_cartezian_special(out gr2, opus, gr, n);
             //  produs_cartezian(out a, ai, b, n, m);
+
+
+
             a = gr2;
+            afisare(gr, n);
+            afisare(opus, n);
             r = 0; r1 = 0;
 
+            n = n * n;
             afisare(a, n);
             asociativ(a, n);
             medial(a, n);
@@ -87,11 +93,11 @@ namespace Laboratorul_numarul_4
                     int element = Convert.ToInt32(Console.ReadLine());
                     MayBeGR[i, j] = element;
 
-                    if (element == 1) opus[i, 1] = j;
+                    if (element == 1) { opus[i, 1] = j; }
                 }
             int k = 1;
             for (int i = 1; i < n + 1; i++)
-                for (int j = 0; j < n + 1; j++)
+                for (int j = 1; j < n + 1; j++)
                 {
                     tabel[i, j] = k;
                     k++;
@@ -108,7 +114,7 @@ namespace Laboratorul_numarul_4
 
             masiv = new int[30, 30];
             for (int i = 1; i < n + 1; i++)
-                for (int j = 1; j < m + 1; j++)
+                for (int j = 1; j < n + 1; j++)
                 {
                     k1 = k1 + 1; k2 = 0;
                     for (int i2 = 1; i2 < n + 1; i2++)
@@ -116,6 +122,8 @@ namespace Laboratorul_numarul_4
                         {
                             k2 = k2 + 1;
                             gr2[k1, k2] = tabel[gr[gr[i, j], opus[j2, 1]], gr[gr[i2, j2], opus[i, 1]]];
+
+                            ///gr2[k1, k2] = tabel[gr[gr[i, j], opus[j2, 1]], gr[gr[i2, j2], opus[j, 1]]];//// legea a doua 
                         }
 
                 }
@@ -152,7 +160,7 @@ namespace Laboratorul_numarul_4
 
         public static void afisare(int[,] a, int n)
         {
-
+            Console.WriteLine();
             for (int i = 1; i < n + 1; i++)
             {
                 for (int j = 1; j < n + 1; j++)

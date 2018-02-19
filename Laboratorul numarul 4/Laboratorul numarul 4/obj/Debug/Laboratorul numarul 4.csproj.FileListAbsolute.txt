@@ -12,3 +12,10 @@ F:/Laboratoare Chiriac C#/Laboratorul numarul 4/Laboratorul numarul 4/obj/Debug/
 /Users/bss/Documents/IN Proj/ChiriacLabors/Laboratorul numarul 4/Laboratorul numarul 4/obj/Debug/Laboratorul numarul 4.csproj.CoreCompileInputs.cache
 /Users/bss/Documents/IN Proj/ChiriacLabors/Laboratorul numarul 4/Laboratorul numarul 4/obj/Debug/Laboratorul numarul 4.exe
 /Users/bss/Documents/IN Proj/ChiriacLabors/Laboratorul numarul 4/Laboratorul numarul 4/obj/Debug/Laboratorul numarul 4.pdb
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\bin\Debug\Laboratorul numarul 4.exe.config
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\bin\Debug\Laboratorul numarul 4.exe
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\bin\Debug\Laboratorul numarul 4.pdb
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\obj\Debug\Laboratorul numarul 4.csprojResolveAssemblyReference.cache
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\obj\Debug\Laboratorul numarul 4.csproj.CoreCompileInputs.cache
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\obj\Debug\Laboratorul numarul 4.exe
+F:\LABORATOARE CHIRIAC\Laboratorul numarul 4\Laboratorul numarul 4\obj\Debug\Laboratorul numarul 4.pdb
